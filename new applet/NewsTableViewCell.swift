@@ -30,7 +30,8 @@ class NewsTableViewCell: UITableViewCell {
         self.headerLabelCell.text = newsModel.title
         self.newTextLabel.text = newsModel.content
         self.dateLabel.text = newsModel.publishedAt
-        self.picLabel.load(url: newsModel.urlToImage)
+//        self.picLabel.load(url: newsModel.urlToImage)
+        self.picLabel.loadImage(fromURL: "\(newsModel.urlToImage)")
     }
 
 }
